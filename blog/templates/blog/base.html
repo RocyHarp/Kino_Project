@@ -1,13 +1,16 @@
-<!DOCTYPE html>
+{% load static %}  <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>КіноБлог</title>
+
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
 </head>
 <body>
     <header>
         <h1>🎬 КіноБлог</h1>
     </header>
+
     <div class="content">
         {% block content %}{% endblock %}
     </div>
